@@ -82,11 +82,7 @@ html {
       justify-content: right;
       padding-right: 50px; 
     }
-    @media (max-width: 798px) {
-       .top-bar{
-       display: none;
-     }
-   }
+  
     @media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2){
       .top-bar h1 {
         font-size: 17px;
@@ -103,7 +99,7 @@ html {
       max-width: var(--nav-content-width);
       margin: 0 auto;
     }
-    
+
     /* Logo */
     .brand img {
       position: absolute;
@@ -111,6 +107,68 @@ html {
       left: 168px;
       height: 88px;
     }
+    @media (min-width: 481px) and (max-width: 768px){
+      .brand img {
+        position: absolute;
+        margin-left: 30px;
+        left: 2px;
+        width: auto;
+      }
+      nav{
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+      }
+      .button{
+        width: 80%;
+      }
+  }
+  @media (min-width: 280px) and (max-width: 320px){
+    .brand img {
+      position: absolute;
+      margin-left: 15px;
+      left: 2px;
+      width: 45%;
+    }
+    nav{
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    }
+    .button{
+      width: 80%;
+    }
+}
+  @media (min-width: 320px) and (max-width: 480px){
+    .brand img {
+      position: absolute;
+      margin-left: 30px;
+      left: 2px;
+      width: 45%;
+    }
+    nav{
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    }
+    .button{
+      width: 80%;
+    }
+}
+    @media (min-width: 768px) and (max-width: 1024px){
+      .brand img {
+        position: absolute;
+        margin-left: 30px;
+        left: 2px;
+        width: auto;
+      }
+  }
+  @media (min-width: 1025px) and (max-width: 1280px){
+    .brand img {
+      position: absolute;
+      margin-left: 30px;
+      left: auto;
+    }
+}
+    @media (max-width: 798px) {
+      .top-bar{
+      display: none;
+    }
+  }
     .brand a,
     .brand a:visited {
       color: var(--mmb-blue);
@@ -191,7 +249,7 @@ html {
     .nav-mobile {
       display: block;
       position: absolute;
-      top: 0;
+      top: 40px;
       right: 0;
       background: var(--nav-background);
       height: var(--nav-height);
@@ -237,7 +295,7 @@ html {
       transform: rotate(-45deg);
     }
     
-    @media screen and (min-width: 799px) {
+    @media screen and (min-width: 799px)  {
       nav {
         float: right;
         width: auto;
@@ -274,6 +332,7 @@ html {
       margin: 0 auto;
       padding: 10px;
     }
+    
     
    
    
