@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/app.js"></script>
+   <!-- CSS -->
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <script src="https://kit.fontawesome.com/e290a18146.js" crossorigin="anonymous"></script>
     <title>MyMedicalBank</title>
 </head>
@@ -199,8 +201,19 @@
        <section class="services">
         <div class="heading">
           <h1 class="todo" style="color: #00BAD8; font-size: 34px; padding-top: 80px;">Our Services</h1>
+          <!-- Flickity HTML init -->
+        <div class="gallery js-flickity"
+        data-flickity-options='{ "wrapAround": true }'>
+        <div class="gallery-cell one"><p>Homecare</p></div>
+        <div class="gallery-cell two"><p>Telemedicine</p></div>
+        <div class="gallery-cell three"><p>Clinic Visit</p></div>
+        <div class="gallery-cell four"><p>Health Jobs</p></div>
+        <div class="gallery-cell five"></div>
+        </div>
         </div>
        </section>
+      <!-- JavaScript -->
+     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
      <script src="./js/app.js"></script>
      <script>
     // After the DOM is loaded

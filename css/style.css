@@ -10,7 +10,7 @@ html {
     padding: 0;
     box-sizing: border-box;
   }
-
+ 
     /* CSS Variables */
     :root {
     --mmb-black: #111111;
@@ -596,6 +596,75 @@ html {
 .typography{
   font-size: 20px;
   max-width: fit-content;
+}
+
+.gallery .one {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  url("../assets/images/homecare-services.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.gallery .two {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  url("../assets/images/tele.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.gallery .three {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url("../assets/images/clinicvisit.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.gallery .four {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  url("../assets/images/jobs.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.gallery .five {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  url("../assets/images/emr-phr.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gallery-cell {
+  width: 35%;
+  height: 450px;
+  margin-right: 20px;
+  box-shadow: 0px 0px 8px #00000063;
+  border-radius: 65px;
+  opacity: 1;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .gallery-cell{
+  width: 60%;
+  height: 280px;
+  border-radius: 45px;
+  font-size: 30px;
+  }
+}
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+.gallery p{
+  color: var(--white);
+  padding-top: 220px;
+  font-family: var(--mmb-font-family-montserrat);
+  font-weight: var(--mmb-font-weight-bold);
+  font-size: 30px;
+}
+.flickity-page-dots .dot{
+  background: var(--mmb-blue) !important;
+
+}
+.flickity-page-dots {
+  bottom: -45px !important;
 }
 
     
