@@ -368,10 +368,12 @@ html {
       }
     @media (min-width: 768px) and (max-width: 1024px){
         .left-side{
-          margin: 20px 60px;
+          margin: 20px 20px;
         }
         .left-side iframe {
           margin-top: 100px;
+          width: 438px;
+          height: 306px;
 
         }
         .header{
@@ -399,6 +401,12 @@ html {
       max-width: none;
     }
 }
+@media (min-width: 280px) and (max-width: 356px){
+  .left-side iframe {
+    width: 200px;
+    height: 306px;
+  }
+  }
 @media (max-width: 480px) and (max-width: 767px){
   .left-side{
     flex-basis: fit-content;
@@ -443,7 +451,7 @@ html {
     }
     .left-side iframe {
       margin-top: 40px;
-      width: 300px;
+      width: 250px;
       height: 306px;
     }  
   }
@@ -1748,5 +1756,14 @@ color: var(--white);
       width: 49.99%;
   } */
 }
+/* #scrollToTopBtn {
+  background-color: black;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 48px;
+  width: 48px;
+} */
 
 
