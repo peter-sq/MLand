@@ -8,3 +8,4 @@ toggleSwitch.addEventListener("change",() =>{
       document.querySelector(".pricing-main").classList.remove("active");
   }
 });
+
