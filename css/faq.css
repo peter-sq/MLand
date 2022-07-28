@@ -399,7 +399,7 @@ i.mob::after {
 }
 .search-bar .text-faq{
     text-align: center;
-    margin: 120px 10px 40px  60px;
+    margin: 120px 60px 40px  60px;
     font-family: var(--mmb-font-family-montserrat);
     font-weight: 700;
     font-size: 50px;

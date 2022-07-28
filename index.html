@@ -42,6 +42,8 @@
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/e290a18146.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </head>
 <body>
@@ -145,6 +147,7 @@
      <!-------------------------------------what would you like to do  section----------------------------------->  
     <div class="container">
       <div class="heading">
+        <div data-aos="fade-up">
         <h1 class="todo">What would you like to do today?</h1>
       </div>
       <div class="row">
@@ -204,9 +207,11 @@
         <h1 class="action-button">Want to make a quick enquiry? Click here</h1>
       </a>
       </div>
+      </div>
     </div>
      <!-------------------------------------Why use our platform?----------------------------------->  
      <section class="platform">
+      <div data-aos="fade-up">
         <div class="heading">
           <h1 class="todo" style="color: #00BAD8; font-size: 34px; padding-top: 80px;">Why use our platform?</h1>
         </div>
@@ -248,9 +253,11 @@
             </div>
           </div>
         </div>
+      </div>
      </section>
        <!-------------------------------------Our Services----------------------------------->  
        <section class="services">
+        <div data-aos="fade-up">
         <div class="heading">
           <h1 class="todo" style="color: #00BAD8; font-size: 34px; padding: 30px;">Our Services</h1>
           <!-- Flickity HTML init -->
@@ -262,9 +269,11 @@
         <div class="gallery-cell four"><a href="https://app.mymedicalbank.com/jobs"><p>Health Jobs</p></a></div>
         </div>
         </div>
+        </div>
        </section>
         <!-------------------------------------Pricing----------------------------------->
         <section class="pricing">
+          <div data-aos="fade-up">
           <div class="heading">
             <h1 class="todo" style="color: #00BAD8; font-size: 34px; padding-top: 80px;">Pricing Plan</h1>
           </div>
@@ -371,9 +380,11 @@
               </div> 
             </div>
           </div>
+          </div>
         </section> 
        <!-------------------------------------About us-----------------------------------> 
       <section class="about">
+        <div data-aos="fade-up">
         <div class="heading">
           <h1 class="todo" style="color: #00BAD8; font-size: 34px; padding-top: 80px;" id="about-us">About Us</h1>
           <img src="./assets/images/homecare-services.jpg">
@@ -477,7 +488,8 @@
             <div class="column" style="border: 5px solid #00BAD8; color: #00BAD8;">
               <h2>3<br><span> <p>Awards</p></span></h2>
             </div>
-          </div>   
+          </div>  
+        </div> 
       </section>
   <!-------------------------------------Footer-----------------------------------> 
   <div class="pg-footer">
@@ -679,6 +691,9 @@
   
   
  </script>
+ <script>
+  AOS.init();
+</script>
  <script type="text/javascript" id="zsiqchat">var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || {widgetcode: "f2f2526ba48eb15195cd8007ca90163c75e94aa29d648e3966b5a9b015a6752cea32669fd2c0b3acf5b0629db042e63c", values:{},ready:function(){}};var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;s.src="https://salesiq.zoho.eu/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);</script>
 </body>
 </html>
