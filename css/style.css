@@ -1463,6 +1463,14 @@ opacity: 1;
   /* margin:50px; */
   white-space: nowrap;
 }
+@media (max-width:479px){
+  .column{
+    width: 170px;
+  }
+  .column p {
+    font-size: 18px;
+  }
+}
 
 .pg-footer {
   font-family: 'Roboto', sans-serif;
