@@ -17,8 +17,24 @@
     <title>MyMedicalBank</title>
 </head>
 <body>
+  <div class="banner" id = "banner">
+    <div class="banner__content">
+      <div class="banner__text">
+        <strong>Reminder :</strong> Our next Health is Wealth webinar holds on Sunday 31st July, 2022.
+        <a class="notification" href="#" ><i>Click here to learn more and to register</i></a>
+      </div>
+      <button class="banner__close" type="button">
+        <span class="material-icons">
+          <strong>X close</strong>
+        </span>
+      </button>
+    </div>
+  </div>
+  
+    </div>
+  </div>
     <!-----------------------------------Topbar------------------------------------------>
-    <div class="top-bar" >
+    <div class="top-bar" id="top-bar" >
         <div class="top-bar-content">
             <h1 class="top-text">Download our app</h1>
             <img class="android-logo" src="./assets/images/apps-01.png" alt="download android app">
@@ -26,10 +42,10 @@
         </div>
     </div>
     <!-------------------------------------Navigation bar------------------------------------>
-    <section class="navigation">
+    <section class="navigation" id="nav">
         <div class="nav-container">
           <div class="brand">
-            <a href="#!"><img src="./assets/images/logo2.png"></a>
+            <a href="index.html"><img src="./assets/images/logo2.png"></a>
           </div>
           <nav>
             <div class="nav-mobile">
@@ -43,13 +59,16 @@
                 <a href="#!">Services</a>
                 <ul>
                   <li>
-                    <a href="#!">homecare</a>
+                    <a href="https://app.mymedicalbank.com/homecare">homecare</a>
                   </li>
                   <li>
-                    <a href="#!">Telemedicine</a>
+                    <a href="https://app.mymedicalbank.com/telemedicine">Telemedicine</a>
                   </li>
                   <li>
-                    <a href="#!">Clinic Visit</a>
+                    <a href="https://app.mymedicalbank.com/clinic-visit">Clinic Visit</a>
+                  </li>
+                  <li>
+                    <a href="https://app.mymedicalbank.com/services">Health Market</a>
                   </li>
                   <li>
                     <a href="#!">EMR/PHR</a>
@@ -60,21 +79,22 @@
                 <a href="#!">Resources</a>
                 <ul>
                   <li>
-                    <a href="#!">How it Works</a>
+                    <a href="https://mmbhomecare.com/how-it-works">How it Works</a>
                   </li>
                   <li>
-                    <a href="#!">Blog</a>
+                    <a href="http://resources.mymedicalbank.com/">Blog</a>
                   </li>
                   <li>
-                    <a href="#!">Faqs</a>
+                    <a href="./html/faq.html">Faqs</a>
                   </li>
                   <li>
-                    <a href="#!">Brochures</a>
+                    <a href="https://drive.google.com/file/d/1hCq7XxJvOcncqUKIrwEQ8bbP3kaZqdXT/view">Brochures</a>
                   </li>
                 </ul>
               </li>
               <li>
-                <button class="button" href="#!">REGISTER/LOGIN</button>
+               
+                <button class="button" onclick="">REGISTER/LOGIN</button>
               </li>
             </ul>
           </nav>
@@ -83,9 +103,9 @@
       <!-------------------------------------Header section----------------------------------->   
     <section class="header">
         <div class="left-side">
-          <p class="title-text">we are here for you!</p>
+          <p class="title-text">We are here for you!</p>
           <h1 class="intro-text">Book Health<br> Service Instantly</h1>
-          <h3 class="sent">Access Quality Healthcare at Home, Online or in-Clinic</h3>
+          <h3 class="sent">Access Quality Healthcare at Home, Online or in Clinic</h3>
         </div>
         <div class="left-side">
           <iframe  src="https://www.youtube.com/embed/D4TSSod0lr0"
@@ -101,24 +121,24 @@
       </div>
       <div class="row">
         <div class="card">
-          <a href="#">
+          <a href="https://mmbhomecare.com/homecare">
         <p>Book a Home Medical Visit or Care Service</p>
          </a>
         </div>
         <div class="card" style="background-color: red;">
-          <a href="#">
+          <a href="https://mmbhomecare.com/telemedicine">
           <p>Talk to a Doctor Online</p>
           </a>
         </div>
         <div class="card">
-          <a href="#">
+          <a href="https://mmbhomecare.com/clinic-visit">
          <p>Book a Clinic Appointment or Medical Test</p>
           </a>
         </div>
       </div>
       <div class="row">
         <div class="card" style="background-color: red;">
-          <a href="#">
+          <a href="https://app.mymedicalbank.com/services">
         <p>Get Health Insurance</p>
         </a>
         </div>
@@ -129,19 +149,19 @@
           </a>
         </div>
         <div class="card" style="background-color: red;">
-          <a href="#">
+          <a href="https://app.mymedicalbank.com/services">
           <p>Book other Healthcare Product & Services</p>
           </a>
         </div>
       </div>
       <div class="row">
         <div class="card">
-          <a href="#">
+          <a href="https://app.mymedicalbank.com/how-it-works">
         <p>Onboard our Organisation as a Healthcare Provider</p>
         </a>
         </div>
         <div class="card">
-          <a href="#">
+          <a href="https://app.mymedicalbank.com/how-it-works">
           <p>Onboard our Organisation to Sponsor our Members</p>
           </a>
         </div>
@@ -152,7 +172,9 @@
         </div>
       </div>
       <div class="heading">
+        <a href="https://app.mymedicalbank.com/contact-us">
         <h1 class="action-button">Want to make a quick enquiry? Click here</h1>
+      </a>
       </div>
     </div>
      <!-------------------------------------Why use our platform?----------------------------------->  
@@ -206,11 +228,10 @@
           <!-- Flickity HTML init -->
         <div class="gallery js-flickity"
         data-flickity-options='{ "wrapAround": true }'>
-        <div class="gallery-cell one"><p>Homecare</p></div>
-        <div class="gallery-cell two"><p>Telemedicine</p></div>
-        <div class="gallery-cell three"><p>Clinic Visit</p></div>
-        <div class="gallery-cell four"><p>Health Jobs</p></div>
-        <div class="gallery-cell five"></div>
+        <div class="gallery-cell one"><a href="https://mmbhomecare.com/homecare"><p>Homecare</p></a></div>
+        <div class="gallery-cell two"><a href="https://mmbhomecare.com/telemedicine"><p>Telemedicine</p></a></div>
+        <div class="gallery-cell three"><a href="https://mmbhomecare.com/clinic-visit"><p>Clinic Visit</p></a></div>
+        <div class="gallery-cell four"><a href="https://app.mymedicalbank.com/jobs"><p>Health Jobs</p></a></div>
         </div>
         </div>
        </section>
@@ -237,11 +258,11 @@
                 <div class="pricing-table style-1">
                   <div class="pricing-table-header">
                     <i class="fa-brands fa-accessible-icon fa-5x icon"></i>
-                    <h3>Homecare</h3>
+                    <h3>HomeCare</h3>
                   </div>
                   <div class="pricing-table-price">
                     <div class="monthly-price">
-                      <div class="amount">₦3,000</div>
+                      <div class="amount">₦15,000</div>
                     </div>
                     <div class="yearly-price">
                       <div class="amount">₦50,000</div>
@@ -260,12 +281,9 @@
                     </ul>
                   </div>
                   <div class="pricing-table-footer">
-                    <a href="#">book now!</a>
+                    <a href="https://mmbhomecare.com/homecare">Book Now!</a>
                   </div>
                 </div>
-                <!-- basic table end -->
-       
-                <!-- standard table start -->
                 <div class="pricing-table style-2">
                   <div class="pricing-table-header">
                     <i class="fa-solid fa-laptop-medical fa-5x icon"></i>
@@ -291,12 +309,9 @@
                     </ul>
                   </div>
                   <div class="pricing-table-footer">
-                    <a href="#">buy now!</a>
+                    <a href="https://mmbhomecare.com/telemedicine">Book Now!</a>
                   </div>
                 </div>
-                <!-- standard table end -->
-       
-                <!-- premium table start -->
                 <div class="pricing-table style-3">
                   <div class="pricing-table-header">
                     <i class="fa-solid fa-house-medical fa-5x icon"></i>
@@ -322,10 +337,9 @@
                     </ul>
                   </div>
                   <div class="pricing-table-footer">
-                    <a href="#">buy now!</a>
+                    <a href="https://mmbhomecare.com/clinic-visit">Book Now!</a>
                   </div>
                 </div>
-                <!-- premium table end -->
               </div> 
             </div>
           </div>
@@ -333,7 +347,7 @@
        <!-------------------------------------About us-----------------------------------> 
       <section class="about">
         <div class="heading">
-          <h1 class="todo" style="color: #00BAD8; font-size: 34px; padding-top: 80px;">About Us</h1>
+          <h1 class="todo" style="color: #00BAD8; font-size: 34px; padding-top: 80px;" id="#about-us">About Us</h1>
           <img src="./assets/images/homecare-services.jpg">
           <p class="about-content">MyMedicalBank is a cloud-based product suite that connects consumers with healthcare providers,
              health information and their health records from any location via a smartphone or computing device.
@@ -451,34 +465,34 @@
             <h2 class="footer-menu-name"> Quick Links</h2>
             <ul id="menu-company" class="footer-menu-list">
               <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="#">About Us</a>
+                <a href="#about-us">About Us</a>
               </li>
               <li class="menu-item menu-item-type-taxonomy menu-item-object-category">
-                <a href="#">Services</a>
+                <a href="https://mmbhomecare.com/service">Services</a>
               </li>
               <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="#">Enquiry Form</a>
+                <a href="https://forms.gle/UMoMXRxsKX5oDERG6">Enquiry Form</a>
               </li>
               <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="#">FAQs</a>
+                <a href="./html/faq.html">FAQs</a>
               </li>
               <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="#">Price Guide</a>
+                <a href="https://drive.google.com/file/d/1OKZ0MJ1h_ihEjYijErwfvgXhoqEqN5lX/view">Price Guide</a>
               </li>
               <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="#">Client Guide</a>
+                <a href="https://drive.google.com/file/d/1SCY37oXfQ_rKPuvMHWVxY-2-FR11hgHN/view?usp=sharing">Client Guide</a>
               </li>
               <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="#">Corporate Guide</a>
+                <a href="https://drive.google.com/file/d/1SXkhgyUOIadhlsQYdUlFjCFEv05DVxwp/view">Corporate Guide</a>
               </li>
               <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="#">Health Workers</a>
+                <a href="https://drive.google.com/file/d/1cps08nfMkGSiudmJF5flEIlfqseDXT8M/view?usp=sharing">Health Workers</a>
               </li>
               <li class="menu-item menu-item-type-post_type menu-item-object-page">
                 <a href="#">Guide</a>
               </li>
               <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="#">Brochure</a>
+                <a href="https://drive.google.com/file/d/1hCq7XxJvOcncqUKIrwEQ8bbP3kaZqdXT/view">Brochure</a>
               </li>
             </ul>
           </div>
@@ -488,24 +502,24 @@
             <h2 class="footer-menu-name">Services</h2>
             <ul id="menu-quick-links" class="footer-menu-list">
               <li class="menu-item menu-item-type-custom menu-item-object-custom">
-                <a target="_blank" rel="noopener noreferrer" href="#">Homecare</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://mmbhomecare.com/homecare">Homecare</a>
               </li>
               <li class="menu-item menu-item-type-custom menu-item-object-custom">
-                <a target="_blank" rel="noopener noreferrer" href="#">Telemedicine</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://mmbhomecare.com/telemedicine">Telemedicine</a>
               </li>
               <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="#">Clinic visit</a>
+                <a href="https://mmbhomecare.com/clinic-visit">Clinic visit</a>
               </li>
               <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="#">Health Jobs</a>
+                <a href="https://app.mymedicalbank.com/jobs">Health Jobs</a>
               </li>
               <li class="menu-item menu-item-type-post_type_archive menu-item-object-customer">
                 <a href="#">EMR/PHR</a></li>
               <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="#">Training</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdQeFcAGmuPKYeTnd9y3-ya2WYQaTZxOnPo_k4eaGZ__SNz-Q/viewform?usp=sf_link">Training</a>
               </li>
               <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="#">Resources</a>
+                <a href="resources.mymedicalbank.com">Resources</a>
               </li>
             </ul>
           </div>
@@ -514,18 +528,18 @@
           <div class="footer-call-to-action">
             <h2 class="footer-call-to-action-title"></h2>
             <p class="footer-call-to-action-description"> </p>
-            <a class="footer-call-to-action-button button" href="#" target="_self"> Drop Us your Feedback! </a>
+            <a class="footer-call-to-action-button button" href="https://mymedicalbank.com/contact.html" target="_self"> Drop Us your Feedback! </a>
           </div>
           <div class="footer-call-to-action">
             <h2 class="footer-call-to-action-title">Connect with Us!</h2>
             <p class="footer-call-to-action-link-wrapper"> 
               <div class="footer-icons">
 
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/MyMedicalBank"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.twitter.com/mymedicalBank"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/company/mymedicalbank/"><i class="fa fa-linkedin"></i></a>
                 <a href="#"><i class="fa fa-youtube"></i></a>
-                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.instagram.com/MyMedicalBank"><i class="fa fa-instagram"></i></a>
                 <a href="#"><i class="fa fa-google"></i></a>
       
               </div>
@@ -550,9 +564,11 @@
       
 
       <!-- JavaScript -->
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+      <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
      <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3393/jquery.flexslider-min.js"></script>
-     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3393/main.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/jquery.flexslider-min.js"></script>
      <script src="./js/app.js"></script>
      <script>
     // After the DOM is loaded
