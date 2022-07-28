@@ -14,7 +14,6 @@ html {
 }
 
 body {
-  background-color: #f2f2f2;
   font-size: 1rem;
   font-family: 'Open Sans', sans-serif;
   color: #000;
@@ -395,7 +394,33 @@ i.mob::after {
   }
 }
 
-.faq-head h2{
+.search-bar{
+    text-align: center;
+}
+.search-bar .text-faq{
+    text-align: center;
+    margin: 120px 10px 40px  60px;
+    font-family: var(--mmb-font-family-montserrat);
+    font-weight: 700;
+    font-size: 50px;
+    text-transform: capitalize;
+    color: #00BAD8;
+}
+input[type=text].search-bar{
+    width: 60%;
+    background-color: #fff;
+    box-shadow: 2px 8px 15px 0 rgb(2 43 105 / 5%);
+    height: 64px;
+    padding: 8px 22px;
+    border: 1px solid rgba(0,102,245,.16);
+    border-radius: 18px;
+    font-size: 2rem;
+    font-family: "CW BR Firma",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    outline: none;
+    color: #022b69;
+    transition: border-color .3s ease;
+}
+/* .faq-head h2{
     padding: 130px 30px 40px;
     text-align: center;
     font-family: var(--mmb-font-family-montserrat);
@@ -404,19 +429,8 @@ i.mob::after {
     text-transform: capitalize;
     color: #00BAD8;
 }
-.faq-head .search-panel {
-    padding: 40px;
-}
-.faq-head .search-panel input {
-    border: 1px solid #8495b1;
-    border-radius: 12px;
-    width: 100%;
-    height: 65px;
-    font-size: 16.5px;
-    outline: none;
-    padding-left: 25px;
-    margin-top: 25px;
-    max-width: 850px;
-    margin: auto;
-}
+.search-panel input{
+    padding: 130px 30px 40px;
+} */
+
 
