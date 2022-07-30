@@ -455,9 +455,9 @@ html {
     }
     .left-side iframe {
       margin-top: 40px;
-      /* width: auto; */
+      width: auto;
       height: 306px;
-      max-width: 100%;
+      /* max-width: 100%; */
     }  
   }
   
