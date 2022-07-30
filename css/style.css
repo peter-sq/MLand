@@ -658,6 +658,12 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.gallery .six {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  url("../assets/images/Digital_health_care_concept_Jackie_Niam_Getty_Images.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .gallery-cell {
   width: 35%;
