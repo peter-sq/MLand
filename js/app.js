@@ -1,3 +1,4 @@
+//pricing card toggle
 var toggleSwitch = document.querySelector(".toggle-switch");
 
 toggleSwitch.addEventListener("change",() =>{
@@ -9,6 +10,7 @@ toggleSwitch.addEventListener("change",() =>{
   }
 });
 
+//testinmonial 
 jQuery(document).ready(function($){
 	//create the slider
 	$('.cd-testimonials-wrapper').flexslider({
@@ -26,17 +28,18 @@ jQuery(document).ready(function($){
 	});
 });
 
-document.querySelector(".banner__close").addEventListener("click", function () {
-  this.closest(".banner").style.display = "none";
-});
 
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("banner").style.top = "0";
+
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("nav");
+console.log(navbar);
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
   } else {
-    document.getElementById("banner").style.top = "-50px";
+    navbar.classList.remove("sticky");
   }
-  prevScrollpos = currentScrollPos;
 }
