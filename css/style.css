@@ -143,18 +143,18 @@ html {
       width: 80%;
     }
 }
-    @media (min-width: 768px) and (max-width: 1024px){
+    @media (min-width: 768px) and (max-width: 1382px){
       .brand img {
         position: absolute;
-        margin-left: 30px;
+        margin-left: 20px;
         left: 2px;
-        width: auto;
+        width: 19%;
       }
   }
   @media (min-width: 1025px) and (max-width: 1280px){
     .brand img {
       position: absolute;
-      margin-left: 30px;
+      margin-left: -50px;
       left: auto;
     }
 }
@@ -309,6 +309,12 @@ html {
       nav > ul > li a:visited {
         padding: 9px 25px 10px 0;
         line-height: var(--nav-height);
+      }
+      @media (min-width: 800px) and (max-width: 987px){
+        nav > ul > li a,
+        nav > ul > li a:visited {
+          font-size: 13px;
+        }
       }
       /* 2nd level */
       nav > ul > li > ul {
@@ -954,7 +960,7 @@ ul{
   max-width: 50%;
 }
 .heading img{
-  width: 60%;
+  width: 50%;
   height: 450px;
 }
 
