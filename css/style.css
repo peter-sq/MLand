@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap');
 /* Smooth scroll effect */
 html {
@@ -926,8 +925,16 @@ ul{
 }
 @media(max-width: 767px){
 	.pricing .pricing-table{
-		width: calc(100% - 30px);
+		width: calc(80% - 30px);
 	}
+  .fa-5x{ 
+    font-size: 3em !important;
+    margin-left: 6px;
+  }
+  .pricing .pricing-table-header h3{
+    font-size: 20px;
+    margin-left: -18px;
+  }
 }
 .pricing .pricing-table-price .amounts {
   background: var(--mmb-blue);
@@ -2020,5 +2027,6 @@ color: var(--white);
     width: 100%;
   }
 }
+
 
 
