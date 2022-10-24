@@ -517,9 +517,9 @@ html {
   width: 30%;
   height: 141px;
   background:var(--mmb-blue);
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
   border-radius: 20px;
-  box-shadow: 0px 0px 10px;
+  /* box-shadow: 0px 0px 10px; */
   margin-bottom: 50px;
   transition: 0.3s;
 }
@@ -1818,15 +1818,34 @@ color: var(--white);
       width: 49.99%;
   } */
 }
-/* #scrollToTopBtn {
-  background-color: black;
-  border: none;
+/* The alert message box */
+.alert {
+  padding: 20px;
+  background-color: var(--mmb-blue);
   color: white;
+  margin-bottom: 0px !important;
+  border-radius: 0px !important;
+  font-family: "Quicksand", sans-serif !important;
+  font-size: 16px;
+  padding-left: 100px !important;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
   cursor: pointer;
-  font-size: 18px;
-  line-height: 48px;
-  width: 48px;
-} */
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+}
 
 .banner {
   background: var(--mmb-blue);
@@ -2027,6 +2046,8 @@ color: var(--white);
     width: 100%;
   }
 }
+
+
 
 
 
